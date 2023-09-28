@@ -1,3 +1,5 @@
+REM created by Frederik A. for testing purpose
+DUCKY_LANG DA
 GUI r
 DELAY 100
 STRINGLN shell:startup
