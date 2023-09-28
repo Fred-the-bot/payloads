@@ -1,4 +1,4 @@
-REM Created by Frederik Amfelt for testing purpose
+REM Created by Frederik A. for testing purpose
 DUCKY_LANG DA
 GUI r
 DELAY 100
