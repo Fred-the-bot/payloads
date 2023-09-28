@@ -48,7 +48,7 @@ STRINGLN  _..--'      |   |      `--.._
 STRINGLN ;________.___|   |___.________;
 STRINGLN 
 
-DELAY 10000
+DELAY 5000
 STRINGLN [console]::WindowHeight=1
 STRINGLN [console]::WindowWidth=1
 DELAY 200
